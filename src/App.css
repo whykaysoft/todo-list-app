@@ -1,38 +1,122 @@
-.App {
+.header{
+  height: 200px;
+  width: 100%;
+  background-color: #E9EEF7;
+  padding-top: 50px;
+}
+
+.header{
+  height: 200px;
+  width: 100%;
+  background-color : #E9EEF6;
+  padding-top: 50px;
+}
+
+.card-container{
+  height: 300px;
+  width: 300px;
+  box-shadow: 0px 3px 50px #A5A5A5;
+}
+
+.card-wrapper{
+  width: 270px; 
+  height: 200px;
+  margin: 10px 20px;
+  box-shadow: 0px 3px 50px #A5A5A5;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-top{
+  width: 100%;
+  height: 2%;
+}
+
+.task-holder{
+  width: 100%;
+  height: 98%;
+  padding: 10px 10px;
+  display : flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.card-header{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  max-width: 80px;
+  height: 30px;
+  padding-top: 1px 1px !important;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.task-container{
+  height: 600px;
+  width: 100%;
   display: flex;
-  flex-direction: column;
+  /* justify-content: space-between; */
+  flex-wrap: wrap;
+  background-color: #F6F7F8;
+  padding : 40px 100px;
+}
+/*Current Date styling*/
+.date{
+  width: 150px;
+  position: absolute;
+  top: 150px;
+  left:250px ;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  color: #fff
+}
+
+.date h1{
+  transition: 0.5s;
+  cursor: pointer;
+  margin: 0 20px;
+  padding: 10px;
+  height: 60px;
+  width: 100px;
+  border-radius: 10px;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-color: black;
+  box-shadow: 0.1em .5em .5em .5em rgba(0,0,0,0.1);
+  -webkit-box-reflect: below 1px linear-gradient(transparent, ##B964F7)
 }
 
-.App-link {
-  color: #61dafb;
+.date h2{
+  transition: 0.5s;
+  cursor: pointer;
+  margin: 0 20px;
+  padding: 10px;
+  height: 60px;
+  width: 100px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #B964F7;
+  box-shadow: 0.1em .5em .5em .5em rgba(0,0,0,0.1);
+  -webkit-box-reflect: below 1px linear-gradient(transparent, ##B964F7)
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.date h1:hover{
+  transform: translateY(-10px);
+}
+
+.date h2:hover{
+  transform: translateY(-10px);
+}
+
+.whykay{
+  position: relative;
+  bottom: 100px;
+  right: 720px;
+  font-size: 3em;
+  padding-bottom: 10px;
+  color: #fff;
 }
